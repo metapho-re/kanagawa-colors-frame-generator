@@ -1,49 +1,52 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1f1f28;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1f28;
 }
 
 #root {
-    display: flex;
-    flex-wrap: wrap;
-    transform-origin: center center;
-    transform: rotate(45deg);
+  display: flex;
+  flex-wrap: wrap;
+  transform-origin: center center;
+  transform: rotate(45deg);
 }
 
 .container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-.left, .top, .right, .bottom {
-    position: absolute;
+.left,
+.top,
+.right,
+.bottom {
+  position: absolute;
 }
 
 .left {
-    transform-origin: left top;
-    transform: rotate(45deg);
+  transform-origin: left top;
+  transform: rotate(45deg);
 }
 
 .top {
-    transform-origin: left top;
-    transform: rotate(-45deg);
+  transform-origin: left top;
+  transform: rotate(-45deg);
 }
 
 .right {
-    right: 0;
-    bottom: 0;
-    transform-origin: right bottom;
-    transform: rotate(45deg);
+  right: 0;
+  bottom: 0;
+  transform-origin: right bottom;
+  transform: rotate(45deg);
 }
 
 .bottom {
-    right: 0;
-    bottom: 0;
-    transform-origin: right bottom;
-    transform: rotate(-45deg);
+  right: 0;
+  bottom: 0;
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
 }
