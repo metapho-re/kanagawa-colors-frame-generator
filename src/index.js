@@ -103,7 +103,7 @@ const createAndAppendInnerSquareElement =
     container.appendChild(element);
   };
 
-const createAndAppendOuterSquareElement = (container, index) => {
+const createAndAppendOuterSquareElement = (container) => (_, index) => {
   const element = document.createElement('div');
 
   element.classList.add('container');
@@ -153,13 +153,9 @@ const generateFrame = () => {
   frame.style.width = `${frameParameters.frameDimension}px`;
   frame.style.height = `${frameParameters.frameDimension}px`;
 
-  for (
-    let index = 0;
-    index < Math.pow(frameParameters.squaresPerSide, 2);
-    index += 1
-  ) {
-    createAndAppendOuterSquareElement(frame, index);
-  }
+  Array(Math.pow(frameParameters.squaresPerSide, 2))
+    .fill()
+    .forEach(createAndAppendOuterSquareElement(frame));
 };
 
 generateFrame();
