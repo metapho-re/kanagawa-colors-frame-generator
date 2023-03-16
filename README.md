@@ -6,9 +6,17 @@ A silly web page that would let me have a wallpaper that matches my [color theme
 ![few squares](./assets/few.png)
 ![many squares](./assets/many.png)
 
+## Usage
+
+The dimension of the frame and the number of squares per side can be provided using URL parameters:
+
+```
+?frame_dimension={frameDimensionInPixels}&squares_per_side={numberOfSquaresPerSide}
+```
+
 ## Author
 
-* **Pierre-Alain Castella** - *Initial work* - [metapho-re](https://github.com/metapho-re)
+- **Pierre-Alain Castella** - _Initial work_ - [metapho-re](https://github.com/metapho-re)
 
 ## License
 
